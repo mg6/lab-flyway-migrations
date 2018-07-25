@@ -10,6 +10,15 @@ buildscript {
 	}
 }
 
+plugins {
+	id "org.flywaydb.flyway" version "5.1.4"
+}
+
+flyway {
+	url = 'jdbc:h2:file:./demo'
+	user = 'sa'
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
