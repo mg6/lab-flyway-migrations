@@ -1,2 +1,2 @@
 alter table student
-    drop column passport_number varchar(255);
+    drop column passport_number;
